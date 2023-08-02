@@ -22,7 +22,7 @@ import org.opensearch.rest.NamedRoute;
 import org.opensearch.rest.RestRequest;
 import org.opensearch.rest.RestRequest.Method;
 import org.opensearch.rest.RestResponse;
-import org.opensearch.rest.RestStatus;
+import org.opensearch.core.rest.RestStatus;
 import org.opensearch.sdk.ExtensionsRunner;
 import org.opensearch.sdk.rest.BaseExtensionRestHandler;
 

@@ -1,0 +1,10 @@
+repositories {
+	mavenCentral()
+	maven { url "https://aws.oss.sonatype.org/content/repositories/snapshots/" }
+	maven { url "https://d1nvenhzbhpy0q.cloudfront.net/snapshots/lucene/"}
+}
+
+dependencies {
+	implementation("org.opensearch:opensearch-core:3.0.0-SNAPSHOT")
+	implementation("org.opensearch.sdk:opensearch-sdk-java:2.0.0-SNAPSHOT")
+}

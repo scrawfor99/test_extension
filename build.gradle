@@ -1,10 +1,23 @@
+import java.io.*
+
+plugins {
+	id 'java'
+}
+
 repositories {
+	mavenLocal()
 	mavenCentral()
-	maven { url "https://aws.oss.sonatype.org/content/repositories/snapshots/" }
-	maven { url "https://d1nvenhzbhpy0q.cloudfront.net/snapshots/lucene/"}
+	maven { url "https://aws.oss.sonatype.org/content/repositories/snapshots" }
+	maven { url "https://d1nvenhzbhpy0q.cloudfront.net/snapshots/lucene/" }
 }
 
 dependencies {
-	implementation("org.opensearch:opensearch-core:3.0.0-SNAPSHOT")
+	def log4jVersion = "2.20.0"
+
+	implementation("org.apache.logging.log4j:log4j-api:${log4jVersion}")
+	implementation("org.apache.logging.log4j:log4j-core:${log4jVersion}")
 	implementation("org.opensearch.sdk:opensearch-sdk-java:2.0.0-SNAPSHOT")
 }
+
+apply from: 'gradle/scripts/setExtensionName.gradle'
+apply from: 'gradle/scripts/setBaseAction.gradle'

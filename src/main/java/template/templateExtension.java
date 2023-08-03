@@ -1,4 +1,4 @@
-package crud;
+package template;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,19 +9,19 @@ import org.opensearch.sdk.rest.ExtensionRestHandler;
 import org.opensearch.sdk.ExtensionSettings;
 import org.opensearch.sdk.ExtensionsRunner;
 
-public class CRUDExtension extends BaseExtension implements ActionExtension {
+public class templateExtension extends BaseExtension implements ActionExtension {
 
-    public CRUDExtension() {
+    public templateExtension() {
         // Optionally pass a String path to a YAML file with these settings
-        super(new ExtensionSettings("crud-extension", "127.0.0.1", "4532", "127.0.0.1", "9200"));
+        super(new ExtensionSettings("template", "127.0.0.1", "4532", "127.0.0.1", "9200"));
     }
 
     @Override
     public List<ExtensionRestHandler> getExtensionRestHandlers() {
-        return List.of(new CrudAction(extensionsRunner()));
+        return List.of(new templateAction(extensionsRunner()));
     }
 
     public static void main(String[] args) throws IOException {
-        ExtensionsRunner.run(new CRUDExtension());
+        ExtensionsRunner.run(new templateExtension());
     }
 }

@@ -1,29 +1,81 @@
 task useCRUDExtension {
 	doLast {
+		def properties = new Properties()
+		def propertiesFile = file('extension.properties')
+
+		if (propertiesFile.exists()) {
+			properties.load(new FileInputStream(propertiesFile))
+		}
+
+		def storedExtensionName = properties.getProperty('extensionName', 'template')
+		def newPath = 'src/main/java/' + storedExtensionName + '/'
+		def targetFile = storedExtensionName + 'Action.java'
+
 		copy {
 			from 'src/main/java/template/baseAction/templateActionCRUD.txt'
-			into 'src/main/java/template'
-			rename 'templateActionCRUD.txt', 'templateAction.java'
+			into newPath
+			rename 'templateActionCRUD.txt', targetFile
+
+			// Replace placeholders in the file
+			filter { line ->
+				line.replaceAll('templateAction', storedExtensionName + 'Action')
+						.replaceAll('template', storedExtensionName)
+			}
 		}
 	}
 }
 
 task useWordCounter {
 	doLast {
+		def properties = new Properties()
+		def propertiesFile = file('extension.properties')
+
+		if (propertiesFile.exists()) {
+			properties.load(new FileInputStream(propertiesFile))
+		}
+
+		def storedExtensionName = properties.getProperty('extensionName', 'template')
+		def newPath = 'src/main/java/' + storedExtensionName + '/'
+		def targetFile = storedExtensionName + 'Action.java'
+
 		copy {
 			from 'src/main/java/template/baseAction/templateActionWordCounter.txt'
-			into 'src/main/java/template'
-			rename 'templateActionWordCounter.txt', 'templateAction.java'
+			into newPath
+			rename 'templateActionWordCounter.txt', targetFile
+
+			// Replace placeholders in the file
+			filter { line ->
+				line.replaceAll('templateAction', storedExtensionName + 'Action')
+						.replaceAll('template', storedExtensionName)
+			}
 		}
 	}
 }
 
 task useBasicOutline {
 	doLast {
+		def properties = new Properties()
+		def propertiesFile = file('extension.properties')
+
+		if (propertiesFile.exists()) {
+			properties.load(new FileInputStream(propertiesFile))
+		}
+
+		def storedExtensionName = properties.getProperty('extensionName', 'template')
+		def newPath = 'src/main/java/' + storedExtensionName + '/'
+		def targetFile = storedExtensionName + 'Action.java'
+
 		copy {
 			from 'src/main/java/template/baseAction/templateActionBasicOutline.txt'
-			into 'src/main/java/template'
-			rename 'templateActionBasicOutline.txt', 'templateAction.java'
+			into newPath
+			rename 'templateActionBasicOutline.txt', targetFile
+
+			// Replace placeholders in the file
+			filter { line ->
+				line.replaceAll('templateAction', storedExtensionName + 'Action')
+						.replaceAll('template', storedExtensionName)
+			}
 		}
 	}
 }
+

@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30d7206a-e735-4810-8aef-56de8ac174e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/template/baseAction/templaceActionWordCounter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/template/baseAction/templateActionBasicOutline.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/template/baseAction/templateActionCRUD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/scripts/setBaseAction.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/scripts/setExtensionName.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crud/CRUDExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template/templateExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crud/CrudAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template/templateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/scripts/setBaseAction.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/scripts/setBaseAction.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template/templateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template/templateExtension.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690993616185</updated>
       <workItem from="1690993617274" duration="533000" />
-      <workItem from="1690995270837" duration="16243000" />
+      <workItem from="1690995270837" duration="18872000" />
     </task>
     <servers />
   </component>
